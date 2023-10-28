@@ -1,0 +1,88 @@
+section {
+            height: auto;
+            font-size: 1.8em;
+            margin-top: 150px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100px;
+            width: 850px;
+            margin-left: 350px;
+            margin-right: 150px;
+            padding: 5px;
+        }
+
+        .col {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .row .col a {
+            text-decoration: none;
+            color: #000;
+            text-decoration: underline;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .col a:hover {
+            color: #6e6262;
+        }
+
+        .actions a {
+            color: blue;
+            text-decoration: underline;
+            margin-left: 10px;
+            padding-right: 5px;
+        }
+
+        .actions {
+            white-space: nowrap;
+            position: absolute;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+        }
+
+        /* Cập nhật CSS cho biểu mẫu */
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        .field {
+            margin-top: 10px;
+        }
+
+        label {
+            display: block; /* Đảm bảo rằng mỗi nhãn nằm trên một hàng riêng */
+            margin: 10px;
+        }
+        label, input {
+            display: inline-block;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }

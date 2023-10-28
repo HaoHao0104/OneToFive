@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/Trangchu.css">
+    <title>Trang chủ</title>
+</head>
+<body> 
+    <header>
+        <div id="header">  
+            <div class="nav-container">
+                <ul class="nav collapse" id="myNav">
+                    <li><a href="SoLieuThongKe.html">Số liệu thống kê</a></li>
+                    <li><a href="BienBanKiemKe.html">Biên bản kiểm kê</a></li>
+                    <li><a href="DonHang.html">Đơn hàng</a></li>
+                    <li><a href="Kho.html">Kho</a></li>
+                    <li class="submenu"><a href="#">Quản lý</a>
+                        <ul>
+                          <li><a href="KeHoachSX.html">Quản lý kế hoạch sản xuất</a></li>
+                          <li><a href="DonMuaNVL.html">Quản lý đơn mua nguyên vật liệu</a></li>
+                        </ul>
+                      </li>
+                    <li class="submenu"><a href="#">Duyệt phiếu</a>
+                      <ul>
+                        <li><a href="PhieuYCXuaNVL.html">Duyệt phiếu yêu cầu xuất nguyên vật liệu</a></li>
+                        <li><a href="PhieuNhapTP.html">Duyệt phiếu yêu cầu nhập thành phẩm</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>  
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" class="logo-img"></a>
+            </div>
+            <div class="icon">
+                <div class="user-icon ">
+                    <a href=""><i class="fa-solid fa-user" ></i></a>
+                </div>
+            </div>
+            <div class="search">
+                <form action="">
+                  <input type="text" placeholder="Search.." name="search" class="search-btn">
+                  <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <a href="#" >Hoạt động hôm nay</a>
+    <div class="container">
+        <div class="inline-box"><a href="#">Số nguyên vật liệu <br>123</a></div>
+        <div class="inline-box">Số thành phẩm <br></div>
+        <div class="inline-box"></div>
+        <div class="inline-box"> </div>
+    </div>
+ <div class="chart-container">
+        <canvas id="myChart" width="200" height="100"></canvas>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['A', 'B', 'C', 'D', 'E'],
+                datasets: [{
+                    label: 'Dữ liệu mẫu',
+                    data: [10, 20, 15, 25, 30],
+                    borderColor: 'blue',
+                    borderWidth: 2,
+                    fill: false,
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+    </section>
+   <footer id="footer">
+    <div class="policy">
+        <h5 class="policy-title">CHÍNH SÁCH</h5>
+        <div class="policy-information">
+            <a href="" >Chính sách bảo mật</a><br>
+            <a href="">Chính sách vận chuyển</a><br>
+            <a href="">Chính sách bảo hành</a><br>
+            <a href="">Điều khoản chung</a>
+        </div>
+    </div>
+    <div class="contact">
+        <h5 class="policy-title">VỀ CHÚNG TÔI</h5>
+        <div class="policy-information">
+            <a href="" >Câu chuyện thương hiệu</a><br>
+            <a href="">Tầm nhìn và giá trị cốt lõi</a><br>
+            <a href="">Lịch sửa phát triển</a><br>
+            <a href="">Mạng lưới và quy mô</a>
+        </div>
+    </div>
+    <div class="CustomerCare">
+        <h5 class="CustomerCare-title" >THÔNG TIN LIÊN HỆ</h5>
+        <div class="contact-information">
+            <P>CÔNG TY TNHH ONETOFIVE</P> 
+            <p>Onetofive.vn</p> 
+                <p>Địa chỉ:Nguyễn văn Bảo, Phường 4, Gò Vấp</p>
+            <p>Hotline:033xxxxxxx</p>
+        </div>
+        <h5 class="Community-title">CỘNG ĐỒNG</h5>
+        <a href="" class="Community-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
+   

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/KeHoachSX.css">
+    <title> Thêm kế hoạch sản xuất</title>
+</head>
+<body> 
+    <header>
+        <div id="header">  
+            <div class="nav-container">
+                <ul class="nav collapse" id="myNav">
+                    <li><a href="#">Số liệu thống kê</a></li>
+                    <li><a href="#">Biên bản kiểm kê</a></li>
+                    <li><a href="#">Đơn hàng</a></li>
+                    <li><a href="#">Kho</a></li>
+                    <li class="submenu"><a href="#">Quản lý</a>
+                        <ul>
+                          <li><a href="KeHoachSX.html">Quản lý kế hoạch sản xuất</a></li>
+                          <li><a href="DonMuaNVL.html">Quản lý đơn mua nguyên vật liệu</a></li>
+                        </ul>
+                      </li>
+                    <li class="submenu"><a href="#">Duyệt phiếu</a>
+                      <ul>
+                        <li><a href="#">Duyệt phiếu yêu cầu xuất nguyên vật liệu</a></li>
+                        <li><a href="#">Duyệt phiếu yêu cầu nhập thành phẩm</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+            </div>  
+            <div class="logo">
+                <a href="index.html"><img src="./image/logo.png" class="logo-img"></a>
+            </div>
+            <div class="icon">
+                <div class="user-icon ">
+                    <a href=""><i class="fa-solid fa-user" ></i></a>
+                </div>
+            </div>
+            <div class="search">
+                <form action="">
+                  <input type="text" placeholder="Search.." name="search" class="search-btn">
+                  <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h1>Thêm kế hoạch sản xuất</h1> <br>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="txtTenSP">Tên sản phẩm:</label>
+            <input type="text" name="txtTenSP" id="txtTenSP">
+            
+            <label for="txtSLSP">Số lượng sản phẩm:</label>
+            <input type="number" name="txtSLSP" id="txtSLSP">
+            
+            <label for="ffile">Hình ảnh:</label>
+            <input type="file" name="ffile" id="ffile">
+            
+            <label for="startDate">Ngày bắt đầu:</label>
+            <input type="date" name="startDate" id="startDate"><br>
+
+            <label for="endDate">Ngày kết thúc:</label>
+            <input type="date" name="endDate" id="endDate">
+            <div class="bang">
+                <table>
+                    <tr>
+                        <th>Cột 1</th>
+                        <th>Cột 2</th>
+                        <th>Cột 3</th>
+                    </tr>
+                    <tr>
+                        <td>Dòng 1, Cột 1</td>
+                        <td>Dòng 1, Cột 2</td>
+                        <td>Dòng 1, Cột 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dòng 2, Cột 1</td>
+                        <td>Dòng 2, Cột 2</td>
+                        <td>Dòng 2, Cột 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dòng 3, Cột 1</td>
+                        <td>Dòng 3, Cột 2</td>
+                        <td>Dòng 3, Cột 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dòng 4, Cột 1</td>
+                        <td>Dòng 4, Cột 2</td>
+                        <td>Dòng 4, Cột 3</td>
+                    </tr>
+                    <tr>
+                        <td>Dòng 5, Cột 1</td>
+                        <td>Dòng 5, Cột 2</td>
+                        <td>Dòng 5, Cột 3</td>
+                    </tr>
+                </table>
+            </div>
+            <input type="reset" value="Nhập lại">
+            <input type="submit" name="btnsubmit" value="Lập Phiếu">
+        </form>
+    </section>
+   <footer id="footer">
+    <div class="policy">
+        <h5 class="policy-title">CHÍNH SÁCH</h5>
+        <div class="policy-information">
+            <a href="" >Chính sách bảo mật</a><br>
+            <a href="">Chính sách vận chuyển</a><br>
+            <a href="">Chính sách bảo hành</a><br>
+            <a href="">Điều khoản chung</a>
+        </div>
+    </div>
+    <div class="contact">
+        <h5 class="policy-title">VỀ CHÚNG TÔI</h5>
+        <div class="policy-information">
+            <a href="" >Câu chuyện thương hiệu</a><br>
+            <a href="">Tầm nhìn và giá trị cốt lõi</a><br>
+            <a href="">Lịch sửa phát triển</a><br>
+            <a href="">Mạng lưới và quy mô</a>
+        </div>
+    </div>
+    <div class="CustomerCare">
+        <h5 class="CustomerCare-title" >THÔNG TIN LIÊN HỆ</h5>
+        <div class="contact-information">
+            <P>CÔNG TY TNHH ONETOFIVE</P> 
+            <p>Onetofive.vn</p> 
+                <p>Địa chỉ:Nguyễn văn Bảo, Phường 4, Gò Vấp</p>
+            <p>Hotline:033xxxxxxx</p>
+        </div>
+        <h5 class="Community-title">CỘNG ĐỒNG</h5>
+        <a href="" class="Community-icon"><i class="fa-brands fa-facebook"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-youtube"></i></a>
+        <a href="" class="Community-icon"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+</footer>
+
+</body>
+</html>
+   

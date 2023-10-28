@@ -1,0 +1,41 @@
+
+
+section{
+    height: auto;
+    font-size: 1.8em;
+    margin-top: 150px;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  h1{
+    text-align: center;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 850px;
+    margin-left: 350px;
+    margin-right: 150px;
+    padding: 5px;
+}
+
+.col {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.actions {
+    white-space: nowrap; /* Ngăn văn bản bị ngắt dòng */
+}
+
+.actions a {
+    color: blue;
+    text-decoration: underline;
+    margin-left: 10px; /* Thêm khoảng cách bên trái giữa các liên kết "Sửa" và "Xóa" */
+}
